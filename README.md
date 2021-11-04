@@ -32,16 +32,16 @@ This simplified calculator adds the entire number selected, rather then adds dig
 * [ ] Take a tour of application, in particular the `App.js`, `/reducer/index.js`, and `/action/index.js` files.
 * [ ] Note that the `TotalDisplay` component takes in a value and displays it in a styled textarea. YOU WILL NOT NEED TO MODIFY THIS COMPONENT.
 * [ ] Note that the `CalcButton` component takes in an `onClick` method and a value, displays that value and attaches the passed `onClick` method to the button ui. YOU WILL NOT NEED TO MODIFY THIS COMPONENT.
-* [ ] Within App.js, import the useReducer hook, our application's reducer and initialState object.
+* [x ] Within App.js, import the useReducer hook, our application's reducer and initialState object.
 * [ ] Use useReducer hook to get access to the application state and the dispatch function.
 
 #### Display our state within the UI.
 > *We now have access to the state within our App component (You can even test this using console.log or your React dev tools). Let's render the state as is on our screen.*
-* [ ] Replace "X" with a reference to `state.operation` within the operation element.
-* [ ] Replace "0" with a reference to `state.memory` within the memory element.
-* [ ] Replace "0" with a reference to `state.total` when passing a value to our TotalDisplay component.
-* [ ] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
-* [ ] **Test** that you are connected to state by changing the initialState value in your reducer to:
+* [ x] Replace "X" with a reference to `state.operation` within the operation element.
+* [ x] Replace "0" with a reference to `state.memory` within the memory element.
+* [ x] Replace "0" with a reference to `state.total` when passing a value to our TotalDisplay component.
+* [ x] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
+* [ x] **Test** that you are connected to state by changing the initialState value in your reducer to:
 ```
 export const initialState = {
     total: 0,
@@ -49,7 +49,7 @@ export const initialState = {
     memory: 0
 }
 ```
-* [ ] Check to see that your display correctly reflects the change to your state.
+* [x ] Check to see that your display correctly reflects the change to your state.
 
 #### Connect a premade action.
 > *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
@@ -63,7 +63,7 @@ export const initialState = {
 
 #### Connect a better premade action.
 > *Adding indivisual actions for every number would be tedious. Let's add in an action that can work for ALL numerical input*
-* [ ] Note the `APPLY_NUMBER` action case (in ./reducer/index.js) and `applyNumber` action creator (in ./actions/index.js). This action adds, multiplies or subtracts a number passed into the action creator.
+* [x] Note the `APPLY_NUMBER` action case (in ./reducer/index.js) and `applyNumber` action creator (in ./actions/index.js). This action adds, multiplies or subtracts a number passed into the action creator.
 * [ ] Import the `applyNumber` action creator into `App.js.`
 * [ ] Remove or comment out the `addOne` event handler from the 1 button.
 * [ ] Create an eventhandler that takes in a number as an argument and dispatches `applyNumber` with it.
